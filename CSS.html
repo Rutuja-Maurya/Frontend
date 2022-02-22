@@ -1,0 +1,73 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+<body>
+  <div class="sidebar">
+      <span class="title">Application</span>
+    
+      <ul class="links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-user' ></i>
+            <span class="links_name">About</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="h3">
+        <span class="dashboard">Dashboard Sample</span>
+      </div>     
+     
+    </nav>
+
+    <div class="home-content">
+      <div class="form-boxes">
+        <div class="recent-form box">
+          
+            <form action="">
+				<div class="container">
+				
+				<div class="h3"><b>Form</b></div>
+				<hr>
+				<label for="Uname"><b>User Name</b></label>
+				<input type="text" placeholder="Enter User Name" name="Uname" id="Uname" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+				
+				<label for="phno"><b>Phone-No</b></label>
+				<input type="text" placeholder="Enter Phone-No" name="phno" id="phno" required>
+				 
+				<label for="gender"><b>Gender:</b></label>
+				<input type="radio" id="gender1" name="gender" value="FEMALE">
+  				<label for="gender1">Female</label>
+  				<input type="radio" id="gender2" name="gender" value="MALE">
+  				<label for="gender2">Male</label>
+				<hr>
+
+				<button type="submit" class="registerbtn">Save</button>
+				</div>
+			</form>
+          </div>        
+        </div>       
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>
