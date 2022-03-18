@@ -1,0 +1,9 @@
+<table>
+    <th>id</th>
+    <th>name</th>
+    <tr *ngFor="let list of users">
+        <td>{{list.id}}</td>
+        <td>{{list.name}}</td>
+        <td><button [routerLink]="['/edit', list.id]">Edit</button></td> |  <td><button [routerLink]="['/details', list.id]">Details</button></td>
+    </tr>
+</table>
