@@ -1,0 +1,17 @@
+<!-- Attribute Binding -->
+<div>
+<a [href]= "hrefVal" [attr.updateLink] ="updatedLink">Googlelink</a>
+</div>
+<router-outlet></router-outlet> 
+
+
+<!--Style and Event Binding -->
+<div>
+  <h1 [style.color]="color">{{title1 | uppercase}}</h1>
+  <h2 [style.color]="color">{{title2 | lowercase}}</h2>
+ <button (click)="updateColor()">Update color</button>
+ <!--Pipes-->
+<p>{{today | date}}</p>
+ </div>
+ 
+ 
