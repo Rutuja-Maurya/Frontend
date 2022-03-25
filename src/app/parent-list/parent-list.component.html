@@ -1,0 +1,17 @@
+<h2>Select FoodType</h2>
+<p>
+    <input type="radio"  value="Child1" name="Cparent" (click)="otherchild1()"> Veg
+    <input type="radio" value="Child2" name="Cparent" (click)="otherchild2()"> Nonveg
+ </p>
+
+
+ <app-child1 *ngIf="name1" (send)="send($event)"></app-child1>
+
+<app-child2 *ngIf="name2" (send2)="send2($event)"></app-child2>
+
+<app-otherchild1 [parentchild]="parentchild"></app-otherchild1> 
+
+<app-otherchild2 [parentchild1]="parentchild1"></app-otherchild2>
+
+<router-outlet></router-outlet>
+
